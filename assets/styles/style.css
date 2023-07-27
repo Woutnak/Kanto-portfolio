@@ -1,20 +1,16 @@
  body{
      margin: 0;
      padding: 0;
-     height:100vh;
-     background:#fb6f92;
+     height:90vh;
+     width: auto;
+     background:url("../img/bg.jpg") no-repeat top 45% right 10px ;
      transition: background 0.2s linear;
 
  }
 
-     /*background:url("../img/bg.jpg") no-repeat top 45% right 10px ;
- body.dark{
-#background:url("../img/bg1.jpg") no-repeat top 45% right 10px ;
-    color: #fff;
-}*/
+    
 body.dark{
-    background: #111;
-    color: aliceblue;
+    background:url("../img/bg1.jpg") no-repeat top 45% right 10px ;
 }
 .label-dark-mode{
     background: #111;
@@ -85,7 +81,6 @@ body.dark{
 
 .portfolio-title{
 
-    text-align: center;
     text-transform: uppercase;
     color:#e5989b;
 }

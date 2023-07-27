@@ -67,10 +67,10 @@ let myPortfolio ={
         }
     ],
     contacts:{
-        github: '<i class="fa-solid fa-envelope"></i>',
-        mail : '<i class="fa-solid fa-envelope"></i>',
-        facebook:'<i class="fa-solid fa-envelope"></i>' ,
-        linkedin: '<i class="fa-solid fa-envelope"></i>'
+        github: '<i class="fa-brands fa-github text-white"></i>',
+        mail : '<i class="fa-solid fa-envelope text-white"></i>',
+        facebook:'<i class="fa-brands fa-facebook-f text-white"></i>' ,
+        linkedin: '<i class="fa-brands fa-linkedin text-white"></i>'
     }
 }
 
