@@ -2,9 +2,8 @@
      margin: 0;
      padding: 0;
      height:100vh;
-     /*background:url("../img/bg.jpg") no-repeat top 45% right 10px ;
-     background-attachment: fixed;
-     transition: background 0.2s linear;*/
+     background:#fb6f92;
+     transition: background 0.2s linear;
 
  }
 
@@ -74,7 +73,7 @@ body.dark{
     
     width: 350px;
     height: 700px;
-    background: blue;
+    background: #e5989b;
     border-radius: 50px;
 }
 
@@ -88,19 +87,30 @@ body.dark{
 
     text-align: center;
     text-transform: uppercase;
+    color:#e5989b;
 }
 
 
-.portfolio{
+.stacks{
     border-radius:50px;
+    background:#ffddd2;
+
 }
 .contact{
-    
     border-radius:50px;
+    background: #e5989b;
 }
 
 .portfolio-content{
       height:530px;
       width: 350px;
       border-radius:50px;
+      background:#ffddd2;
+    }
+
+
+
+.sub-title, .sep{
+    color:#e29578;
+    font-weight:bold;
     }

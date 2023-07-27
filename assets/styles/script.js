@@ -16,7 +16,7 @@ let myPortfolio ={
 
     stacks:['JS','Python','PHP','SQL'],
 
-    presentation:'Autonome et enthousiaste,mes experiances ma permis de renforcer mes acquis et d \'apprehender les differents outils et techniques de developpement web.En quete de nouveau challange,je souhaite rejoindre une organisation a la quelle je pourait apporter mon dynamisme et mon creativite.',
+    presentation:'Autonomes et enthousiastes, mes expériences m’ont permis de renforcer mes acquis et d\'apprehender les différents outils et techniques de développement web. En quête de nouveau challenge, je souhaite rejoindre une organisation à laquelle je pourrais apporter mon dynamisme et ma créativité.',
 
     skills : ['French','English','Management','Marketing'],
 
@@ -30,7 +30,7 @@ let myPortfolio ={
         {
             dateDebut:"Mai 2022",
             dateFin:"Novembre 2022 ",
-            diplome:"licence en Informatique",
+            diplome:"Licence en Informatique",
 
         },
         {
@@ -56,13 +56,13 @@ let myPortfolio ={
         {
             dateDebut:"Mai 2020",
             dateFin:"Decembre 2020",
-            poste:"stagiaire",
+            poste:"Stagiaire",
 
         } ,
         {
             dateDebut:"Aout 2021",
             dateFin:"Fevrier 2022",
-            poste:"operateur reseaux sociaux",
+            poste:"Operateur reseaux sociaux",
 
         }
     ],
