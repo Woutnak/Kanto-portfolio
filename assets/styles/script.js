@@ -22,17 +22,18 @@ let myPortfolio ={
 
      etudes :[
         {
-            dateDebut:"Juin 2021",
-            dateFin: "Aout 2021",
-            diplome:"Certificat en management",
-
-        },
-        {
             dateDebut:"Mai 2022",
             dateFin:"Novembre 2022 ",
             diplome:"Licence en Informatique",
 
         },
+        {
+            dateDebut:"Juin 2021",
+            dateFin: "Aout 2021",
+            diplome:"Certificat en management",
+
+        },
+        
         {
             dateDebut:"Mai 2020",
             dateFin:"Decembre 2020",
@@ -54,23 +55,35 @@ let myPortfolio ={
     ],
     experiences:[
         {
-            dateDebut:"Mai 2020",
-            dateFin:"Decembre 2020",
-            poste:"Stagiaire",
-
-        } ,
-        {
             dateDebut:"Aout 2021",
             dateFin:"Fevrier 2022",
             poste:"Operateur reseaux sociaux",
 
+        },
+        {
+            dateDebut:"Juin 2021",
+            dateFin:"Septembre 2021",
+            poste:"Stagiaire Administrateur systeme et reseau",
+
+        } ,
+        {
+            dateDebut:"Decembre 2020",
+            dateFin:"Mai 2021",
+            poste:"Stagiaire Integrateur web",
+
+        },
+        {
+            dateDebut:"Jan 2020",
+            dateFin:"Mars 2020",
+            poste:"Stagiaire Technicienne de laboratoire de langue",
+
         }
     ],
     contacts:{
-        github: '<i class="fa-brands fa-github text-white"></i>',
-        mail : '<i class="fa-solid fa-envelope text-white"></i>',
-        facebook:'<i class="fa-brands fa-facebook-f text-white"></i>' ,
-        linkedin: '<i class="fa-brands fa-linkedin text-white"></i>'
+        github: '<a href="https://github.com/Woutnak"> <i class="fa-brands fa-github text-white"></i> </a>',
+        mail : '<a href="#"><i class="fa-solid fa-envelope text-white"></i></a>',
+        facebook:'<a href="#"><i class="fa-brands fa-facebook-f text-white"></i> </a>' ,
+        linkedin: '<a  href="#"><i class="fa-brands fa-linkedin text-white"></i></a>'
     }
 }
 
