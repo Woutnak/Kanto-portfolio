@@ -18,7 +18,7 @@ let myPortfolio ={
 
     presentation:'Autonomes et enthousiastes, mes expériences m’ont permis de renforcer mes acquis et d\'apprehender les différents outils et techniques de développement web. En quête de nouveau challenge, je souhaite rejoindre une organisation à laquelle je pourrais apporter mon dynamisme et ma créativité.',
 
-    skills : ['French','English','Management','Marketing'],
+    skills : ['Francais','Anglais','Management de projet'],
 
      etudes :[
         {
@@ -116,8 +116,17 @@ for (let i in myPortfolio.stacks) {
     listStacks += '<li class="nav-item">' + myPortfolio.stacks[i] + '</li>';
 
 }
-//affectation du liste au div #stacks
+//affectation du liste au div #skills
 document.getElementById("stacks").innerHTML = listStacks
+
+//skills
+let listSkills ='<ul class="nav d-flex justify-content-around">';
+for (let i in myPortfolio.skills) {
+    listSkills += '<li class="nav-item">' + myPortfolio.skills[i] + '</li>';
+
+}
+//affectation du liste au div #skills
+document.getElementById("skills").innerHTML = listSkills
 
 
 
