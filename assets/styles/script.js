@@ -81,11 +81,11 @@ let myPortfolio ={
     ],
     contacts:{
         github: '<a href="https://github.com/Woutnak"> <i class="fa-brands fa-github text-white"></i> </a>',
-        mail : '<a href="#"><i class="fa-solid fa-envelope text-white"></i></a>',
-        facebook:'<a href="#"><i class="fa-brands fa-facebook-f text-white"></i> </a>' ,
-        linkedin: '<a  href="#"><i class="fa-brands fa-linkedin text-white"></i></a>'
+        mail : '<a href="https://mail.google.com" mailto="Kanto Ramanandraibe"><i class="fa-solid fa-envelope text-white"></i></a>',
+        facebook:'<a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f text-white"></i> </a>' ,
+        linkedin: '<a  href="https://www.linkedin.com"><i class="fa-brands fa-linkedin text-white"></i></a>'
     },
-    cv:"blabla"
+    cv:"./assets/cv.pdf"
 }
 
 //navigation
@@ -98,7 +98,7 @@ for (let i in myPortfolio.menu) {
 //document.getElementById('navbar').innerHTML += nav;
 
 //download cv
-document.getElementById("down-cv").innerHTML = '<button type="button" class=" m-3 p-3 down-cv" download hrf="myPortfolio.cv">' + 'Télécharger mon CV' + '</button>'
+document.getElementById("down-cv").innerHTML = '<button download type="button" class=" m-3 p-3 down-cv"  href="myPortfolio.cv">' + 'Télécharger mon CV' + '</button>'
 
 document.getElementById("github").innerHTML = '<a href="#">' + myPortfolio.contacts.github + '</a>'
 
