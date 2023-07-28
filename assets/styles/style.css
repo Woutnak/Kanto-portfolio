@@ -109,3 +109,17 @@ body.dark{
     color:#e29578;
     font-weight:bold;
     }
+.skills{ background:#ffddd2;
+      color:#e29578;
+      font-weight:bold;
+      border:none;
+      border-radius:10px;
+      text-align:center;}
+.down-cv{
+      background:#ffddd2;
+      color:#e29578;
+      font-weight:bold;
+      border:none;
+      border-radius:10px;
+      text-align:center;
+     }

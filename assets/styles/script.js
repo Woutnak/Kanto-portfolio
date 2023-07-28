@@ -12,13 +12,13 @@ let myPortfolio ={
 
     name : 'Kanto Ramanandraibe',
 
-    work :'Web developer',
+    work :'Developpeuse web',
 
-    stacks:['JS','Python','PHP','SQL'],
+    stacks:['<i class="fa-solid fa-code"></i>','<i class="fa-brands fa-js"></i>','<i class="fa-brands fa-python"></i>','<i class="fa-brands fa-php"></i>','<i class="fa-solid fa-database"></i>'],
 
     presentation:'Autonomes et enthousiastes, mes expériences m’ont permis de renforcer mes acquis et d\'apprehender les différents outils et techniques de développement web. En quête de nouveau challenge, je souhaite rejoindre une organisation à laquelle je pourrais apporter mon dynamisme et ma créativité.',
 
-    skills : ['Francais','Anglais','Management de projet'],
+    skills : ['Français','Anglais','Management de projet'],
 
      etudes :[
         {
@@ -56,24 +56,24 @@ let myPortfolio ={
     experiences:[
         {
             dateDebut:"Aout 2021",
-            dateFin:"Fevrier 2022",
-            poste:"Operateur reseaux sociaux",
+            dateFin:"Février 2022",
+            poste:"opérateur réseaux sociaux",
 
         },
         {
             dateDebut:"Juin 2021",
             dateFin:"Septembre 2021",
-            poste:"Stagiaire Administrateur systeme et reseau",
+            poste:"Stagiaire Administrateur système et réseau",
 
         } ,
         {
-            dateDebut:"Decembre 2020",
+            dateDebut:"Décembre 2020",
             dateFin:"Mai 2021",
-            poste:"Stagiaire Integrateur web",
+            poste:"Stagiaire Intégrateur web",
 
         },
         {
-            dateDebut:"Jan 2020",
+            dateDebut:"Janvier 2020",
             dateFin:"Mars 2020",
             poste:"Stagiaire Technicienne de laboratoire de langue",
 
@@ -84,7 +84,8 @@ let myPortfolio ={
         mail : '<a href="#"><i class="fa-solid fa-envelope text-white"></i></a>',
         facebook:'<a href="#"><i class="fa-brands fa-facebook-f text-white"></i> </a>' ,
         linkedin: '<a  href="#"><i class="fa-brands fa-linkedin text-white"></i></a>'
-    }
+    },
+    cv:"blabla"
 }
 
 //navigation
@@ -95,6 +96,11 @@ for (let i in myPortfolio.menu) {
 }
 //injection du liste de menu au navigation
 //document.getElementById('navbar').innerHTML += nav;
+
+//download cv
+document.getElementById("down-cv").innerHTML = '<button type="button" class=" m-3 p-3 down-cv" download hrf="myPortfolio.cv">' + 'Télécharger mon CV' + '</button>'
+
+document.getElementById("github").innerHTML = '<a href="#">' + myPortfolio.contacts.github + '</a>'
 
 //presentation
 document.getElementById("presentation").innerHTML = myPortfolio.presentation
@@ -135,7 +141,7 @@ document.getElementById("stacks").innerHTML = listStacks
 //skills
 let listSkills ='<ul class="nav d-flex justify-content-around">';
 for (let i in myPortfolio.skills) {
-    listSkills += '<li class="nav-item">' + myPortfolio.skills[i] + '</li>';
+    listSkills += '<li class="nav-item skills m-1 p-1">' + myPortfolio.skills[i] + '</li>';
 
 }
 //affectation du liste au div #skills
