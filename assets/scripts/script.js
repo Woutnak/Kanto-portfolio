@@ -20,46 +20,49 @@ let myPortfolio ={
 
     skills : ['Français','Anglais','Management de projet'],
 
-     etudes :[
-        {
-            dateDebut:"Mai 2022",
-            dateFin:"Novembre 2022 ",
-            diplome:"Licence en Informatique",
+    //  etudes :[
+    //     {
+    //         dateDebut:"Mai 2022",
+    //         dateFin:"Novembre 2022 ",
+    //         diplome:"Licence en Informatique",
 
-        },
-        {
-            dateDebut:"Juin 2021",
-            dateFin: "Aout 2021",
-            diplome:"Certificat en management",
+    //     },
+    //     {
+    //         dateDebut:"Juin 2021",
+    //         dateFin: "Aout 2021",
+    //         diplome:"Certificat en management",
 
-        },
+    //     },
         
-        {
-            dateDebut:"Mai 2020",
-            dateFin:"Decembre 2020",
-            diplome:"First certificat in english",
+    //     {
+    //         dateDebut:"Mai 2020",
+    //         dateFin:"Decembre 2020",
+    //         diplome:"First certificat in english",
 
-        },
-        {
-            dateDebut:"2017",
-            dateFin:"2018",
-            diplome:"Bacc serie D",
+    //     },
+    //     {
+    //         dateDebut:"2017",
+    //         dateFin:"2018",
+    //         diplome:"Bacc serie D",
 
-        },
-        {
-            dateDebut:"2016",
-            dateFin:"2017",
-            diplome:"Bacc serie A2",
+    //     },
+    //     {
+    //         dateDebut:"2016",
+    //         dateFin:"2017",
+    //         diplome:"Bacc serie A2",
 
-        }
-    ],
-    experiences:[
+    //     }
+    //],
+    postes:[
         {
             dateDebut:"Aout 2021",
             dateFin:"Février 2022",
             poste:"opérateur réseaux sociaux",
 
-        },
+        }
+    ],
+    stages:[
+        
         {
             dateDebut:"Juin 2021",
             dateFin:"Septembre 2021",
@@ -79,6 +82,7 @@ let myPortfolio ={
 
         }
     ],
+   
     contacts:{
         github: '<a href="https://github.com/Woutnak"> <i class="fa-brands fa-github text-white"></i> </a>',
         mail : '<a href="https://mail.google.com" mailto="Kanto Ramanandraibe"><i class="fa-solid fa-envelope text-white"></i></a>',
@@ -113,19 +117,31 @@ for (let  index in myPortfolio.etudes) {
     myPortfolio.etudes[index].dateDebut +' - '+
     myPortfolio.etudes[index].dateFin + '</br>'
 }
-
-//experiences
-let listExperiences ='<ul>';
-for (let index in myPortfolio.experiences) {
-    listExperiences += '<li>' +
-               myPortfolio.experiences[index].poste +': '+
-               myPortfolio.experiences[index].dateDebut +' - '+
-               myPortfolio.experiences[index].dateFin +
+//postes
+let listPoste ='<ul>';
+for (let index in myPortfolio.postes) {
+    listPoste += '<li>' +
+               myPortfolio.postes[index].poste +': '+
+               myPortfolio.postes[index].dateDebut +' - '+
+               myPortfolio.postes[index].dateFin +
               '</li>';
 
 }
 //affectation du liste au div #experiences
-document.getElementById("experiences").innerHTML = listExperiences
+document.getElementById("experiences-postes").innerHTML = listPoste
+
+//Stages
+let listStage ='<ul>';
+for (let index in myPortfolio.stages) {
+    listStage += '<li>' +
+               myPortfolio.stages[index].poste +': '+
+               myPortfolio.stages[index].dateDebut +' - '+
+               myPortfolio.stages[index].dateFin +
+              '</li>';
+
+}
+//affectation du liste au div #experiences
+document.getElementById("experiences-stages").innerHTML = listStage
 
 //projects
 
