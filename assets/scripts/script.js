@@ -53,11 +53,22 @@ let myPortfolio ={
 
     //     }
     //],
+    projets:[
+        {
+            dateDebut:"Octobre 2023",
+            dateFin:"Novembre 2023",
+            projet:"AzerType",
+            description:"c'est un exercice d'application proposé par Openclassroom lors du cours JavaScript",
+            langage:["HTML","CSS","JavaScript"]
+
+
+        }
+    ],
     postes:[
         {
             dateDebut:"Aout 2021",
             dateFin:"Février 2022",
-            poste:"opérateur réseaux sociaux",
+            poste:"Opérateur réseaux sociaux",
 
         }
     ],
@@ -66,19 +77,19 @@ let myPortfolio ={
         {
             dateDebut:"Juin 2021",
             dateFin:"Septembre 2021",
-            poste:"Stagiaire Administrateur système et réseau",
+            poste:"Administrateur système et réseau",
 
         } ,
         {
             dateDebut:"Décembre 2020",
             dateFin:"Mai 2021",
-            poste:"Stagiaire Intégrateur web",
+            poste:"Intégrateur web",
 
         },
         {
             dateDebut:"Janvier 2020",
             dateFin:"Mars 2020",
-            poste:"Stagiaire Technicienne de laboratoire de langue",
+            poste:"Technicien de laboratoire de langue",
 
         }
     ],
@@ -104,7 +115,7 @@ for (let i in myPortfolio.menu) {
 //download cv
 document.getElementById("down-cv").innerHTML = '<button download type="button" class=" m-3 p-3 down-cv"  href="myPortfolio.cv">' + 'Télécharger mon CV' + '</button>'
 
-document.getElementById("github").innerHTML = '<a href="#">' + myPortfolio.contacts.github + '</a>'
+//document.getElementById("github").innerHTML = '<a href="#">' + myPortfolio.contacts.github + '</a>'
 
 //presentation
 document.getElementById("presentation").innerHTML = myPortfolio.presentation
@@ -118,6 +129,20 @@ for (let  index in myPortfolio.etudes) {
     myPortfolio.etudes[index].dateFin + '</br>'
 }
 //postes
+let listProjet ='<ul>';
+for (let index in myPortfolio.projets) {
+    listProjet += '<li>' +
+               myPortfolio.projets[index].projet +': '+
+               myPortfolio.projets[index].dateDebut +' - '+
+               myPortfolio.projets[index].dateFin + '</br>' +
+               myPortfolio.projets[index].description +'</br>' +
+                'Langages : '+ myPortfolio.projets[index].langage + 
+              '</li>';
+
+}
+//affectation du liste au div #experiences-projets
+document.getElementById("experiences-projets").innerHTML = listProjet
+//postes
 let listPoste ='<ul>';
 for (let index in myPortfolio.postes) {
     listPoste += '<li>' +
@@ -127,7 +152,7 @@ for (let index in myPortfolio.postes) {
               '</li>';
 
 }
-//affectation du liste au div #experiences
+//affectation du liste au div #postes
 document.getElementById("experiences-postes").innerHTML = listPoste
 
 //Stages
@@ -143,16 +168,16 @@ for (let index in myPortfolio.stages) {
 //affectation du liste au div #experiences
 document.getElementById("experiences-stages").innerHTML = listStage
 
-//projects
+
 
 //stacks
-let listStacks ='<ul class="nav d-flex justify-content-around">';
-for (let i in myPortfolio.stacks) {
-    listStacks += '<li class="nav-item">' + myPortfolio.stacks[i] + '</li>';
+// let listStacks ='<ul class="nav d-flex justify-content-around">';
+// for (let i in myPortfolio.stacks) {
+//     listStacks += '<li class="nav-item">' + myPortfolio.stacks[i] + '</li>';
 
-}
-//affectation du liste au div #skills
-document.getElementById("stacks").innerHTML = listStacks
+// }
+// //affectation du liste au div #skills
+// document.getElementById("stacks").innerHTML = listStacks
 
 //skills
 let listSkills ='<ul class="nav d-flex justify-content-around">';
@@ -167,8 +192,8 @@ document.getElementById("skills").innerHTML = listSkills
 
 //footer
 //affichage contact
-document.getElementById("github").innerHTML = '<a href="#">' + myPortfolio.contacts.github + '</a>'
-document.getElementById("mail").innerHTML ='<a href="#">' + myPortfolio.contacts.mail + '</a>'
-document.getElementById("facebook").innerHTML ='<a href="#">' + myPortfolio.contacts.facebook + '</a>'
-document.getElementById("linkedin").innerHTML = '<a href="#">' + myPortfolio.contacts.linkedin + '</a>'
+// document.getElementById("github").innerHTML = '<a href="#">' + myPortfolio.contacts.github + '</a>'
+// document.getElementById("mail").innerHTML ='<a href="#">' + myPortfolio.contacts.mail + '</a>'
+// document.getElementById("facebook").innerHTML ='<a href="#">' + myPortfolio.contacts.facebook + '</a>'
+// document.getElementById("linkedin").innerHTML = '<a href="#">' + myPortfolio.contacts.linkedin + '</a>'
 

@@ -68,7 +68,7 @@ body.dark{
 .about-me{
     
     width: 350px;
-    height: 700px;
+    height: 750px;
     background: #e5989b;
     border-radius: 50px;
 }
@@ -97,8 +97,8 @@ body.dark{
 }
 
 .portfolio-content{
-      height:530px;
       width: 350px;
+      height: 950px;
       border-radius:50px;
       background:#ffddd2;
     }
